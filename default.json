@@ -1,0 +1,13 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Default preset for use with Renovate's repos",
+    "extends": [
+      "config:base",
+      ":maintainLockFilesWeekly",
+      ":enablePreCommit",
+      "group:allNonMajor",
+      "regexManagers:dockerfileVersions",
+      "schedule:weekly",
+      "docker:pinDigests"
+    ]
+}
