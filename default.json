@@ -18,7 +18,10 @@
       "matchDepTypes": [
         "indirect"
       ],
-      "enabled": true
+      "enabled": true,
+      "postUpdateOptions": [
+        "gomodTidy"
+      ]
     }
   ]
 }
