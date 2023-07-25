@@ -23,5 +23,14 @@
   ],
   "postUpdateOptions": [
     "gomodTidy"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**"
   ]
 }
