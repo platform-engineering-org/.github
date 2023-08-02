@@ -8,7 +8,8 @@
     "group:all",
     "regexManagers:dockerfileVersions",
     "schedule:weekly",
-    "docker:pinDigests"
+    "docker:pinDigests",
+    "workarounds:supportRedHatImageVersion"
   ],
   "packageRules": [
     {
