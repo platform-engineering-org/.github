@@ -23,6 +23,7 @@
     }
   ],
   "postUpdateOptions": [
-    "gomodUpdateImportPaths"
+    "gomodUpdateImportPaths",
+    "gomodTidy"
   ]
 }
