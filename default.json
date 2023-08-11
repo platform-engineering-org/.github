@@ -19,10 +19,10 @@
       "enabled": true
     },
     {
-      "description": "go major upgrades are ungrouped",
+      "description": "Group go major upgrades",
       "matchManagers": ["gomod"],
       "matchUpdateTypes": ["major"],
-      "groupName": null
+      "groupName": "go major updates"
     }
   ],
   "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
