@@ -13,17 +13,17 @@
   ],
   "packageRules": [
     {
-      "matchManagers": [
-        "gomod"
-      ],
-      "matchDepTypes": [
-        "indirect"
-      ],
+      "description": "Enable go indirect dependencies",
+      "matchManagers": ["gomod"],
+      "matchDepTypes": ["indirect"],
       "enabled": true
+    },
+    {
+      "description": "Group go major updates",
+      "matchManagers": ["gomod"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "go major updates"
     }
   ],
-  "postUpdateOptions": [
-    "gomodUpdateImportPaths",
-    "gomodTidy"
-  ]
+  "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
 }
