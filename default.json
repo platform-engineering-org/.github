@@ -25,5 +25,12 @@
       "groupName": "go major updates"
     }
   ],
-  "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
+  "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"],
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.?devcontainer.json$"],
+      "matchStrings": ["\"image\" *: *\"(?<depName>.+?):(?<currentValue>.+?)\",?"],
+      "datasourceTemplate": "docker"
+    }
+  ]
 }
