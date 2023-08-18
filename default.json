@@ -32,5 +32,6 @@
       "matchStrings": ["\"image\" *: *\"(?<depName>.+?):(?<currentValue>.+?)\",?"],
       "datasourceTemplate": "docker"
     }
-  ]
+  ],
+  "configMigration": true
 }
