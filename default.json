@@ -23,6 +23,13 @@
       "matchManagers": ["gomod"],
       "matchUpdateTypes": ["major"],
       "groupName": "go major updates"
+    },
+    {
+      "description": "Group patch updates",
+      "matchUpdateTypes": ["patch"],
+      "groupName": "Patch updates",
+      "automerge": true,
+      "platformAutomerge": true
     }
   ],
   "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"],
