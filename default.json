@@ -24,9 +24,9 @@
       "groupName": "go major updates"
     },
     {
-      "description": "Group patch updates",
-      "matchUpdateTypes": ["patch"],
-      "groupName": "Patch updates",
+      "description": "Group patch and digest updates",
+      "matchUpdateTypes": ["patch", "digest"],
+      "groupName": "Patch and digest updates",
       "automerge": true,
       "platformAutomerge": true
     }
