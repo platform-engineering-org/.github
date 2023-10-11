@@ -18,10 +18,9 @@
       "enabled": true
     },
     {
-      "description": "Group go major upgrades",
+      "description": "Group go upgrades",
       "matchManagers": ["gomod"],
-      "matchUpdateTypes": ["major"],
-      "groupName": "go major updates"
+      "groupName": "go updates"
     },
     {
       "description": "Group patch and digest updates",
