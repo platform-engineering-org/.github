@@ -20,7 +20,8 @@
     {
       "description": "Group go upgrades",
       "matchManagers": ["gomod"],
-      "groupName": "go updates"
+      "groupName": "go updates",
+      "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
     },
     {
       "description": "Group patch and digest updates",
@@ -30,6 +31,5 @@
       "platformAutomerge": true
     }
   ],
-  "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"],
   "configMigration": true
 }
