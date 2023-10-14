@@ -12,23 +12,18 @@
   ],
   "packageRules": [
     {
-      "description": "Enable go indirect dependencies",
-      "matchManagers": ["gomod"],
-      "matchDepTypes": ["indirect"],
-      "enabled": true
-    },
-    {
-      "description": "Group go upgrades",
-      "matchManagers": ["gomod"],
-      "groupName": "go updates",
-      "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
-    },
-    {
       "description": "Group patch and digest updates",
       "matchUpdateTypes": ["patch", "digest"],
       "groupName": "Patch and digest updates",
       "automerge": true,
       "platformAutomerge": true
+    },
+    {
+      "description": "Group go upgrades",
+      "matchManagers": ["gomod"],
+      "matchDepTypes": ["major", "minor", "patch", "digest", "indirect"],
+      "groupName": "go updates",
+      "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
     }
   ],
   "configMigration": true
