@@ -26,5 +26,6 @@
       "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
     }
   ],
-  "configMigration": true
+  "configMigration": true,
+  "onboardingNoDeps": true
 }
