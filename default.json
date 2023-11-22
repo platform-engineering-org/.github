@@ -28,5 +28,6 @@
     }
   ],
   "configMigration": true,
-  "onboardingNoDeps": true
+  "onboardingNoDeps": true,
+  "gitAuthor": "Platform Engineering Bot"
 }
