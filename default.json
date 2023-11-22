@@ -29,5 +29,5 @@
   ],
   "configMigration": true,
   "onboardingNoDeps": true,
-  "gitAuthor": "Platform Engineering Bot"
+  "gitAuthor": "Platform Engineering Bot <platform-engineering@redhat.com>"
 }
