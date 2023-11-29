@@ -29,5 +29,6 @@
   ],
   "configMigration": true,
   "onboardingNoDeps": true,
-  "gitAuthor": "Platform Engineering Bot <platform-engineering@redhat.com>"
+  "gitAuthor": "Platform Engineering Bot <platform-engineering@redhat.com>",
+  "gitIgnoredAuthors": ["137812415+platform-engineering-bot@users.noreply.github.com"]
 }
