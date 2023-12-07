@@ -20,9 +20,13 @@
       "platformAutomerge": true
     },
     {
-      "description": "Group go upgrades",
       "matchManagers": ["gomod"],
-      "matchDepTypes": ["major", "minor", "patch", "digest", "indirect"],
+      "matchDepTypes": ["indirect"],
+      "enabled": true
+    },
+    {
+      "description": "Group go updates",
+      "matchManagers": ["gomod"],
       "groupName": "go updates",
       "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
     }
