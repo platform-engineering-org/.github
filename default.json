@@ -14,25 +14,45 @@
   "packageRules": [
     {
       "description": "Group patch and digest updates",
-      "matchUpdateTypes": ["patch", "digest"],
+      "matchUpdateTypes": [
+        "patch",
+        "digest"
+      ],
       "groupName": "Patch and digest updates",
       "automerge": true,
       "platformAutomerge": true
     },
     {
-      "matchManagers": ["gomod"],
-      "matchDepTypes": ["indirect"],
+      "matchManagers": [
+        "gomod"
+      ],
+      "matchDepTypes": [
+        "indirect"
+      ],
       "enabled": true
     },
     {
       "description": "Group go updates",
-      "matchManagers": ["gomod"],
+      "matchManagers": [
+        "gomod"
+      ],
       "groupName": "go updates",
-      "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"]
+      "postUpdateOptions": [
+        "gomodUpdateImportPaths",
+        "gomodTidy"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "quay.io/centos/centos"
+      ],
+      "pinDigests": false
     }
   ],
   "configMigration": true,
   "onboardingNoDeps": true,
   "gitAuthor": "Platform Engineering Bot <platform-engineering@redhat.com>",
-  "gitIgnoredAuthors": ["137812415+platform-engineering-bot@users.noreply.github.com"]
+  "gitIgnoredAuthors": [
+    "137812415+platform-engineering-bot@users.noreply.github.com"
+  ]
 }
