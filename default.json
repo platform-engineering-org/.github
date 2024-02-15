@@ -9,7 +9,8 @@
     "regexManagers:dockerfileVersions",
     "schedule:weekly",
     "workarounds:supportRedHatImageVersion",
-    ":gitSignOff"
+    ":gitSignOff",
+    ":pinDigestsDisabled"
   ],
   "packageRules": [
     {
@@ -50,12 +51,6 @@
         "gomodUpdateImportPaths",
         "gomodTidy"
       ]
-    },
-    {
-      "matchPackageNames": [
-        "quay.io/centos/centos"
-      ],
-      "pinDigests": false
     }
   ],
   "configMigration": true,
