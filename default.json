@@ -81,6 +81,18 @@
       "depNameTemplate": "hashicorp/terraform",
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v?(?<version>.*)$"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^.gitlab-ci.yml$"
+      ],
+      "matchStrings": [
+        "https://gitlab\\.com/renovate-bot/renovate-runner/-/raw/(?<currentValue>.*?)/templates/renovate\\.gitlab-ci\\.yml"
+      ],
+      "depNameTemplate": "renovate-bot/renovate-runner",
+      "registryUrlTemplate": "https://gitlab.com",
+      "datasourceTemplate": "gitlab-releases"
     }
   ],
   "configMigration": true,
