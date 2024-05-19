@@ -70,6 +70,19 @@
       "pinDigests": false
     }
   ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update terraform",
+      "fileMatch": [".devcontainer/devcontainer.json"],
+      "matchStrings": [
+        "\\s*\"version\":\\s*\"(?<currentValue>.*?)\" // renovate: packageName=hashicorp/terraform"
+      ],
+      "depNameTemplate": "hashicorp/terraform",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v?(?<version>.*)$"
+    }
+  ],
   "configMigration": true,
   "onboardingNoDeps": true,
   "gitAuthor": "Platform Engineering Bot <platform-engineering@redhat.com>",
