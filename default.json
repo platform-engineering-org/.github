@@ -15,6 +15,7 @@
   "git-submodules": {
     "enabled": true
   },
+  "cloneSubmodules": true,
   "packageRules": [
     {
       "description": "Patch and digest updates",
