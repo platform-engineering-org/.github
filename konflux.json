@@ -23,7 +23,8 @@
         "prBodyDefinitions": "{ \"Notes\": \"{{#if (or (containsString updateType 'minor') (containsString updateType 'major'))}}:warning:[migration](https://github.com/redhat-appstudio/build-definitions/blob/main/task/{{{replace '^quay.io/redhat-appstudio-tekton-catalog/task-' '' packageName}}}/{{{newVersion}}}/MIGRATION.md):warning:{{/if}}\" }",
         "prBodyTemplate": "{{{header}}}{{{table}}}{{{notes}}}{{{changelogs}}}{{{footer}}}",
         "recreateWhen": "always",
-        "rebaseWhen": "behind-base-branch"
+        "rebaseWhen": "behind-base-branch",
+        "schedule": ["at any time"]
       }
     ]
   }
