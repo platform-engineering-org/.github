@@ -11,7 +11,7 @@
         ],
         "enabled": true,
         "groupName": "Konflux references",
-        "branchPrefix": "konflux/references/",
+        "branchName": "konflux/references/{{baseBranch}}",
         "branchTopic": "{{baseBranch}}",
         "commitMessageTopic": "Konflux references",
         "semanticCommits": "enabled",
