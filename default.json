@@ -92,5 +92,6 @@
   "gitAuthor": "Platform Engineering Bot <platform-engineering@redhat.com>",
   "gitIgnoredAuthors": [
     "137812415+platform-engineering-bot@users.noreply.github.com"
-  ]
+  ],
+  "rebaseWhen": "behind-base-branch"
 }
