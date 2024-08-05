@@ -93,5 +93,6 @@
   "gitIgnoredAuthors": [
     "137812415+platform-engineering-bot@users.noreply.github.com"
   ],
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "behind-base-branch",
+  "prConcurrentLimit": 0
 }
