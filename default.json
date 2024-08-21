@@ -10,7 +10,8 @@
     "schedule:weekly",
     "workarounds:supportRedHatImageVersion",
     ":gitSignOff",
-    ":pinDigestsDisabled"
+    ":pinDigestsDisabled",
+    "github>platform-engineering-org/.github//fedora.json"
   ],
   "git-submodules": {
     "enabled": true
