@@ -5,7 +5,8 @@
       "customType": "regex",
       "description": "Update Fedora base image based on endoflife-date",
       "fileMatch": [
-        ".gitlab-ci.yml$"      ],
+        ".gitlab-ci.yml$"
+      ],
       "matchStrings": [
         "^\\s*image:\\s+quay.io/fedora/fedora:(?<currentValue>.*)\\s+#\\s+renovate:\\s*datasource=endoflife-date\\s+depName=fedora\\s+versioning=docker$"
       ],
@@ -20,5 +21,4 @@
       "matchDepNames": ["quay.io/fedora/fedora"],
       "enabled": false
     }
-  ]
 }
