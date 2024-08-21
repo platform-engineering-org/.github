@@ -8,7 +8,7 @@
         "\\.gitlab-ci.yml$"
       ],
       "matchStrings": [
-        "^\\s*image:\\s+quay.io/fedora/fedora:(?<currentValue>.*)\\s+#\\s+renovate:\\s+datasource=endoflife-date\\s+depName=fedora\\s+versioning=docker$"
+        "\\s*image:\\s+quay.io/fedora/fedora:(?<currentValue>.*)\\s+#\\s+renovate:\\s+datasource=endoflife-date\\s+depName=fedora\\s+versioning=docker"
       ],
       "versioningTemplate": "loose",
       "datasourceTemplate": "endoflife-date",
