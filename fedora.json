@@ -21,4 +21,5 @@
       "matchDepNames": ["quay.io/fedora/fedora"],
       "enabled": false
     }
+  ]
 }
