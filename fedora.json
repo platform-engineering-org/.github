@@ -17,6 +17,7 @@
   ],
   "packageRules": [
     {
+      "matchManagers": ["gitlabci"],
       "matchDatasources": ["docker"],
       "matchDepNames": ["quay.io/fedora/fedora"],
       "enabled": false
