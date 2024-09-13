@@ -11,7 +11,8 @@
     "workarounds:supportRedHatImageVersion",
     ":gitSignOff",
     ":pinDigestsDisabled",
-    "github>platform-engineering-org/.github//fedora.json"
+    "customManagers:gitlabPipelineVersions",
+    "local>platform-engineering-org/.github//fedora.json"
   ],
   "git-submodules": {
     "enabled": true
