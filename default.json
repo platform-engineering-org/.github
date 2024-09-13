@@ -12,7 +12,7 @@
     ":gitSignOff",
     ":pinDigestsDisabled",
     "customManagers:gitlabPipelineVersions",
-    "local>platform-engineering-org/.github//fedora.json"
+    "github>platform-engineering-org/.github//fedora.json"
   ],
   "git-submodules": {
     "enabled": true
