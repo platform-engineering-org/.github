@@ -11,7 +11,7 @@
         ],
         "enabled": true,
         "groupName": "Konflux references",
-        "branchName": "konflux/references/{{baseBranch}}",
+        "branchName": "renovate/konflux/references/{{baseBranch}}",
         "commitMessageTopic": "Konflux references",
         "semanticCommits": "enabled",
         "prFooter": "To execute skipped test pipelines write comment `/ok-to-test`",
